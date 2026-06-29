@@ -83,13 +83,11 @@ a:focus-visible {
 }
 
 .brand-mark {
-  display: inline-grid;
   width: 34px;
   height: 34px;
-  place-items: center;
   border-radius: 10px;
-  background: linear-gradient(135deg, var(--cyan), var(--violet) 52%, var(--magenta));
-  color: #fff;
+  display: block;
+  box-shadow: 0 8px 18px rgba(124, 77, 255, 0.18);
 }
 
 nav {

@@ -22,8 +22,14 @@ The repository includes `netlify.toml`, so Netlify can publish `docs/legal-site`
 
 After publishing, add the hosted URLs to App Store Connect:
 
-- Privacy Policy URL: `https://<domain>/privacy.html`
-- Support URL: `https://<domain>/support.html`
+- Privacy Policy URL: `https://nogueirathiago.github.io/quem-te-segue-legal/privacy.html`
+- Support URL: `https://nogueirathiago.github.io/quem-te-segue-legal/support.html`
+
+The public GitHub Pages mirror is:
+
+```text
+https://github.com/nogueirathiago/quem-te-segue-legal
+```
 
 If the hosted path uses a folder, use the final public path, for example:
 
@@ -40,6 +46,15 @@ After hosting, run:
 PRIVACY_POLICY_URL="https://<domain>/privacy.html" \
 SUPPORT_URL="https://<domain>/support.html" \
 TERMS_URL="https://<domain>/terms.html" \
+scripts/public_legal_url_guard.sh
+```
+
+Production check:
+
+```sh
+PRIVACY_POLICY_URL="https://nogueirathiago.github.io/quem-te-segue-legal/privacy.html" \
+SUPPORT_URL="https://nogueirathiago.github.io/quem-te-segue-legal/support.html" \
+TERMS_URL="https://nogueirathiago.github.io/quem-te-segue-legal/terms.html" \
 scripts/public_legal_url_guard.sh
 ```
 
